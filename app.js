@@ -26,7 +26,7 @@ class Products {
             products = products.map(item =>{
                 const {title,price} = item.fields;
                 const {id} = item.sys;
-                const {image} = item.fields.image.fields.file.url;
+                const image = item.fields.image.fields.file.url;
                 return {title,price,id,image}
             }) 
             return products     
